@@ -79,6 +79,10 @@ body {
   color: #D29D50;
 }
 
+.clue-card__value.medium {
+  font-size: 9vh;
+}
+
 .clue-card__inner {
   display: grid;
   justify-items: center;
@@ -96,15 +100,11 @@ body {
   text-transform: uppercase;
 }
 
-.clue-card__inner.long {
+.clue-card__inner.small {
   font-size: 4vw;
 }
 
-.clue-card__inner.medium {
-  font-size: 5vw;
-}
-
-.clue-card__inner.short {
+.clue-card__inner.large {
   font-size: 6vw;
 }
 

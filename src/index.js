@@ -63,10 +63,20 @@ class ClueCard extends React.Component {
   }
 
   render() {
+    let valueClass = 'large';
+    if(this.props.value.length === 4) {
+      valueClass = 'medium';
+    }
+
+    let textClass = 'small';
+    if(this.state.cardText.length < 20) {
+      textClass = 'large';
+    }
+
     return (
       <div className="clue-card">
-        <button className="clue-card__value" onClick={this.showClue}><span className="dollar-sign">$</span>{this.props.value}</button>
-        <div className={`clue-card__inner ${this.state.clueIsShowing ? 'show' : 'hidden'} ${this.props.length ? this.props.length : 'long'}`}>
+        <button className={`clue-card__value ${valueClass}`} onClick={this.showClue}><span className="dollar-sign">$</span>{this.props.value}</button>
+        <div className={`clue-card__inner ${textClass} ${this.state.clueIsShowing ? 'show' : 'hidden'}`}>
           <div className="clue-card__inner-wrapper">
             <div className="clue-card__clue">{this.state.cardText}</div>
             <button className={`clue-card__answer-link ${this.state.showAnswerLink ? '' : 'hidden'}`} onClick={this.toggleAnswer}>Toggle Answer</button>
@@ -152,7 +162,7 @@ function App() {
         answer: "The Potemkin"
       },
       {
-        value: "200",
+        value: "1000",
         clue: "In 1717 Blackbeard converted a captured French slave ship & named it this late queen's “Revenge”",
         answer: "Queen Anne's Revenge"
       }
@@ -215,32 +225,27 @@ function App() {
       {
         value: "200",
         clue: "“Like A Surgeon”",
-        answer: "Madonna",
-        length: "short"
+        answer: "Madonna"
       },
       {
         value: "400",
         clue: "“Eat It”",
-        answer: "Michael Jackson",
-        length: "short"
+        answer: "Michael Jackson"
       },
       {
         value: "600",
         clue: "“Canadian Idiot”",
-        answer: "Green Day",
-        length: "short"
+        answer: "Green Day"
       },
       {
         value: "800",
         clue: "“I Love Rocky Road”",
-        answer: "Joan Jett",
-        length: "short"
+        answer: "Joan Jett"
       },
       {
         value: "1000",
         clue: "“I Want A New Duck”",
-        answer: "Huey Lewis (And the News)",
-        length: "short"
+        answer: "Huey Lewis (And the News)"
       }
     ],
     "AT THE ZOO": [
