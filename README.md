@@ -2,6 +2,7 @@
 
 This is a Jeopardy! game built on React, Webpack and Babel, with hot reloading. Currently, the features include:
 * An accurate game board
+* The ability to click on dollar values to see clues and toggle answers
 
 ## Installation
 * `git clone git@github.com:eroepken/jeopardy-js.git`
