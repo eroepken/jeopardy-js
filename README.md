@@ -4,6 +4,9 @@ This is a Jeopardy! game built on React, Webpack and Babel, with hot reloading. 
 * An accurate game board
 * The ability to click on dollar values to see clues and toggle answers
 
+Aspirations for future versions:
+* Moderator companion page to be loaded in a separate window (keep track of scores, add/subtract wagers, and see/manage the clues/answers without showing players)
+
 ## Installation
 * `git clone git@github.com:eroepken/jeopardy-js.git`
 * cd jeopardy-js
