@@ -8,6 +8,9 @@ Aspirations for future versions:
 * Moderator companion page to be loaded in a separate window (keep track of scores, add/subtract wagers, and see/manage the clues/answers without showing players)
 * The ability to use an external data source rather than manually adding JSON data.
 
+## Compatible Modules
+Turns out the way I developed this works pretty well with (Troy Pavlek's Jeopardy Parser)[https://github.com/tpavlek/jeopardy-parser]. Win!
+
 ## Installation
 * `git clone git@github.com:eroepken/jeopardy-js.git`
 * cd jeopardy-js
