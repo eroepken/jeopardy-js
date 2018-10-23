@@ -9,7 +9,7 @@ Aspirations for future versions:
 * The ability to use an external data source rather than manually adding JSON data.
 
 ## Compatible Modules
-Turns out the way I developed this works pretty well with (Troy Pavlek's Jeopardy Parser)[https://github.com/tpavlek/jeopardy-parser]. Win!
+Turns out the way I developed this works pretty well with [Troy Pavlek's Jeopardy Parser](https://github.com/tpavlek/jeopardy-parser). Win!
 
 ## Installation
 * `git clone git@github.com:eroepken/jeopardy-js.git`
