@@ -1,0 +1,22 @@
+{
+  "Storybook - Basic story": {
+    "prefix": ["sbs"],
+    "body": [
+      "import { ComponentStory, ComponentMeta } from '@storybook/react'",
+      "",
+      "import ${1:${component}} from '.'",
+      "",
+      "export default {",
+      "  title: '${2:${atomicLevel}}/${1:${component}}',",
+      "  component: ${1:${component}},",
+      "} as ComponentMeta<typeof ${1:${component}}>",
+      "",
+      "const Template: ComponentStory<typeof ${1:${component}}> = () => (",
+      "  <${1:${component}} />",
+      ")",
+      "",
+      "export const Default = Template.bind({})",
+      ""
+    ]
+  },
+}

@@ -1,0 +1,33 @@
+@import url("./fonts/stylesheet.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black p-4 leading-none;
+  }
+}
+
+@layer utilities {
+  .text-shadow-default {
+    text-shadow: 0.05em 0.05em 0 rgba(0, 0, 0, 0.75);
+  }
+
+  .spread-h {
+    @apply flex flex-row justify-between items-center;
+  }
+
+  .center {
+    @apply flex justify-center items-center;
+  }
+
+  .center-v {
+    @apply flex flex-col justify-center;
+  }
+
+  .border-spacing-0 {
+    border-spacing: 0;
+  }
+}

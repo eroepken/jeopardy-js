@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "ritwickdey.liveserver",
+    "eamodio.gitlens",
+    "silvenon.mdx",
+    "bradlc.vscode-tailwindcss",
+    "ms-vscode.vscode-typescript-next",
+    "christian-kohler.npm-intellisense",
+    "graphql.vscode-graphql",
+    "stylelint.vscode-stylelint"
+  ]
+}

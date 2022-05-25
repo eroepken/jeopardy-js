@@ -1,0 +1,18 @@
+{
+  "ESLint - Disable whole file": {
+    "prefix": ["esldf"],
+    "body": ["/* eslint-disable */"]
+  },
+  "ESLint - Disable certain rules for a file": {
+    "prefix": ["esldfr"],
+    "body": ["/* eslint-disable $rules */"]
+  },
+  "ESLint - Disable next line": {
+    "prefix": ["esldnl"],
+    "body": ["// eslint-disable-next-line"]
+  },
+  "ESLint - Disable certain rules for next line": {
+    "prefix": ["esldnlr"],
+    "body": ["// eslint-disable-next-line $rules"]
+  },
+}
