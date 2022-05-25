@@ -1,0 +1,62 @@
+{
+  "TS React - Named functional component": {
+    "prefix": ["nfc"],
+    "body": [
+      "import { FC } from 'react'",
+      "",
+      "const ${1:${name}}: FC = () => (",
+      "  <> </>",
+      ")",
+      "",
+      "export default ${1:${name}}",
+      ""
+    ]
+  },
+  "TS React - Functional component with children": {
+    "prefix": ["fcwc"],
+    "body": [
+      "import { FC, PropsWithChildren } from 'react'",
+      "",
+      "const ${1:${name}}: FC<PropsWithChildren<{}>> = ({ children }) => (",
+      "  <div>{ children }</div>",
+      ")",
+      "",
+      "export default ${1:${name}}",
+      ""
+    ]
+  },
+  "TS React - Functional component with props": {
+    "prefix": ["fcwp"],
+    "body": [
+      "import { FC } from 'react'",
+      "",
+      "interface I${1:${name}}Props {",
+      "  ${2:${firstProp}}?: string",
+      "}",
+      "",
+      "const ${1:${name}}: FC<I${1:${name}}Props> = ({ ${2:${firstProp}} }) => (",
+      "  <> </>",
+      ")",
+      "",
+      "export default ${1:${name}}",
+      ""
+    ]
+  },
+  "TS React - Functional component with props and children": {
+    "prefix": ["fcwpc"],
+    "body": [
+      "import { FC, PropsWithChildren } from 'react'",
+      "",
+      "interface I${1:${name}}Props {",
+      "  ${2:${firstProp}}?: string",
+      "}",
+      "",
+      "const ${1:${name}}: FC<PropsWithChildren<I${1:${name}}Props>> = ({ children, ${2:${firstProp}} }) => (",
+      "  <div>{ children }</div>",
+      ")",
+      "",
+      "export default ${1:${name}}",
+      ""
+    ]
+  },
+}
